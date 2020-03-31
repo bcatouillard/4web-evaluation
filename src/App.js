@@ -7,10 +7,8 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 const App = () => (
   <div className="App">
     <Router>
-      <Switch>
-        <Route exact path="/" component={Login}></Route>
-        <Route path="/datagrid" component={Datagrid}></Route>
-      </Switch>
+      <Route exact path="/" component={Login}></Route>
+      <Route path="/datagrid" component={Datagrid}></Route>
     </Router>
   </div>
 );
