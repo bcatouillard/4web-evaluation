@@ -10,16 +10,13 @@ const Datagrid = ({
             <table>
                 <thead>
                     <tr>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
+                        <td>First Name</td>
+                        <td>Last Name</td>
+                        <td>Email Address</td>
+                        <td>Gender</td>
+                        <td>IP Address</td>
                     </tr>
                 </thead>
-                <tbody>
-                    
-                </tbody>
             </table>
         </div>
     </>
