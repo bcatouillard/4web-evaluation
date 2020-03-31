@@ -6,7 +6,7 @@ It's my version of advanced web test.
 
 ## Installation
 
-    1. Install dependencies
+   1. Install dependencies
         ```sh
             npm install
         ```
