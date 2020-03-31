@@ -1,14 +1,14 @@
- import React from 'react';
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
-import Login from './Login/Login';
+import Login from './Login/Login.container';
+import { BrowserRouter as Router, Route } from "react-router-dom";
 
-function App() {
-  return (
-    <div className="App">
-      <Login></Login>
-    </div>
-  );
-}
+const App = () => (
+  <div className="App">
+    <Router>
+      <Route path="/" component={Login}></Route>
+    </Router>
+  </div>
+);
 
 export default App;

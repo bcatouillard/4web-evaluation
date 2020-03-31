@@ -11,9 +11,8 @@ const Login = ({
 }) => (
   <>
     <div className="login">
-      <h1 className="subtitle">Login</h1>
       <form className="login" onSubmit={formHandler}>
-        <label for="email">Login</label>
+        <label htmlFor="email">Login</label>
         <input
           type="email"
           value={email}
@@ -21,7 +20,7 @@ const Login = ({
           className="login__email"
           placeholder="Email"
         />
-        <label for="password">Password</label>
+        <label htmlFor="password">Password</label>
         <input
           value={password}
           onChange={e => setPassword(e.target.value)}
