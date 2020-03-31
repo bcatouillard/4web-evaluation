@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./Login.css";
 import Login from "./Login";
+import { useHistory } from "react-router-dom";
 
 const EnhanceLogin = props => {
   const [email, setEmail] = useState("");
@@ -8,11 +9,12 @@ const EnhanceLogin = props => {
   const [hideErrorMessage, setHideErrorMessage] = useState({
     visibility: "hidden"
   });
+  const history = useHistory();
 
   const formHandler = e => {
     e.preventDefault();
     if (email === "contact@web.fr" && password === "azerty") {
-      // Add redirection to next page if authentification successful 
+      history.push("/datagrid");
     } else {
       setHideErrorMessage({
         visibility: "visible"
