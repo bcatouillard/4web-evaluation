@@ -1,5 +1,6 @@
 import React from "react";
 import "./Datagrid.css";
+import DatagridAPI from "./DatagridAPI";
 
 const Datagrid = ({
     nbElements,
@@ -17,6 +18,7 @@ const Datagrid = ({
                         <td>IP Address</td>
                     </tr>
                 </thead>
+            <DatagridAPI/>
             </table>
         </div>
     </>
