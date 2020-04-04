@@ -12,24 +12,11 @@ export default class DatagridAPI extends React.Component {
       const data = await response.json();
       this.setState({ items: data, loading: false });
     }
-  
+
     render(){
+      const items = this.state.items
       return(
-        <tbody>
-          {this.state.loading || !this.state.items ? (
-            <tr><td>Loading...</td></tr>
-          ) : (
-            this.state.items.map((item) => (
-              <tr>
-                <td>{item.first_name}</td>
-                <td>{item.last_name}</td>
-                <td>{item.email}</td>
-                <td>{item.gender}</td>
-                <td>{item.ip_address}</td>
-              </tr>
-            ))
-          )}
-        </tbody>
-      ) 
-  }
+        items
+      );
+    }
 }
