@@ -1,6 +1,7 @@
 import React from "react";
 import "./Datagrid.css";
 import DatagridAPI from "./DatagridAPI";
+import {Table} from 'react-bootstrap';
 
 const Datagrid = ({
     nbElements,
@@ -8,7 +9,7 @@ const Datagrid = ({
 }) => (
     <>
         <div className="datagrid">
-            <table>
+            <Table striped bordered hover>
                 <thead>
                     <tr>
                         <td>First Name</td>
@@ -19,7 +20,7 @@ const Datagrid = ({
                     </tr>
                 </thead>
             <DatagridAPI/>
-            </table>
+            </Table>
         </div>
     </>
 )

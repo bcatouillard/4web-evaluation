@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import "./Datagrid.css";
 import Datagrid from "./Datagrid";
 
 

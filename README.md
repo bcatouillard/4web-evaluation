@@ -2,7 +2,7 @@
 
 ## Context
 
-It's my version of advanced web test.
+Web app with authentification, displaying datagrid
 
 ## Installation
 
@@ -14,3 +14,7 @@ It's my version of advanced web test.
         ```sh
             npm start server
         ```
+
+## Trello
+
+[Link to the trello board](https://trello.com/b/7vvYgILX/4web-evaluation)

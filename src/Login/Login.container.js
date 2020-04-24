@@ -12,6 +12,7 @@ const EnhanceLogin = props => {
   const history = useHistory();
 
   const formHandler = e => {
+    console.log(e);
     e.preventDefault();
     if (email === "contact@web.fr" && password === "azerty") {
       history.push("/datagrid");

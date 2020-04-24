@@ -1,9 +1,8 @@
-.container {
+#root{
   display: flex;
-  flex-flow: column;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
-}
-
-.header_subtitle {
   text-align: center;
+  min-height: 100vh;
 }
