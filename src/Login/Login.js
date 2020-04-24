@@ -1,5 +1,6 @@
 import React from "react";
 import "./Login.css";
+import {Button, Form, Alert} from 'react-bootstrap';
 
 const Login = ({
   email,
@@ -11,28 +12,32 @@ const Login = ({
 }) => (
   <>
     <div className="login">
-      <form className="login" onSubmit={formHandler}>
-        <label htmlFor="email">Login</label>
-        <input
-          type="email"
-          value={email}
-          onChange={e => setEmail(e.target.value)}
-          className="login__email"
-          placeholder="Email"
-        />
-        <label htmlFor="password">Password</label>
-        <input
-          value={password}
-          onChange={e => setPassword(e.target.value)}
-          type="password"
-          className="login__password"
-          placeholder="Password"
-        />
-        <h3 className="login__error " style={hideErrorMessage}>
+      <Form onSubmit={formHandler}>
+      <Form.Group controlId="email">
+          <Form.Label>Login</Form.Label>
+          <Form.Control
+            type="email"
+            value={email}
+            onChange={e => setEmail(e.target.value)}
+            className="login__email"
+            placeholder="Email"
+            />
+        </Form.Group>
+        <Form.Group controlId="password">
+        <Form.Label>Password</Form.Label>
+          <Form.Control
+            value={password}
+            onChange={e => setPassword(e.target.value)}
+            type="password"
+            className="login__password"
+            placeholder="Password"
+          />
+        </Form.Group>
+        <Alert variant="danger"style={hideErrorMessage}>
           Bad credentials
-        </h3>
-        <button className="login__button">Login</button>
-      </form>
+        </Alert>
+        <Button variant="primary" type="submit">Login</Button>
+      </Form>
     </div>
   </>
 );
