@@ -1,5 +1,4 @@
 import React from "react";
-import "./Login.css";
 import {Button, Form, Alert} from 'react-bootstrap';
 
 const Login = ({

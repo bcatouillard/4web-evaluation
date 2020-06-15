@@ -1,5 +1,4 @@
 import React from "react";
-import "./Datagrid.css";
 import DatagridAPI from "./DatagridAPI";
 import {Table} from 'react-bootstrap';
 
